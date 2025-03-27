@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   spec.description      = 'This is a universal static library for libffi, compatible with iOS simulators and devices.'
   spec.homepage         = 'https://github.com/CodeAcmen/libffi-ios-latest'
   spec.license          = { :type => 'MIT', :file => 'LICENSE' }
-  spec.author           = { 'aaronTang' => 'aaronTang1123@126.com' }
+  spec.author           = { 'aaronTang' => 'aaronTang1123@163.com' }
   spec.source           = { :git => 'https://github.com/CodeAcmen/libffi-ios-latest.git', :tag => 'v3.4.0' }
   spec.platform         = :ios, '9.0'
   spec.source_files     = 'libffi-ios-latest/libffi-ios-universal/include/**/*.{h}'

@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name             = 'libffi-ios-latest'
-  spec.version          = '3.4.0'
+  spec.version          = '3.4.0-patch2'
   spec.summary          = 'A universal static library for libffi (iOS Simulator and Device).'
   spec.description      = 'This is a universal static library for libffi, compatible with iOS simulators and devices.'
   spec.homepage         = 'https://github.com/CodeAcmen/libffi-ios-latest'

@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
   spec.homepage         = 'https://github.com/CodeAcmen/libffi-ios-latest'
   spec.license          = { :type => 'MIT', :file => 'LICENSE' }
   spec.author           = { 'aaronTang' => 'aaronTang1123@163.com' }
-  spec.source           = { :git => 'https://github.com/CodeAcmen/libffi-ios-latest.git', :tag => 'v3.4.0' }
+  spec.source           = { :git => 'https://github.com/CodeAcmen/libffi-ios-latest.git', :tag => '3.4.0-patch2' }
   spec.platform         = :ios, '9.0'
   spec.source_files     = 'libffi-ios-latest/libffi-ios-universal/include/**/*.{h}'
   spec.libraries        = 'ffi'

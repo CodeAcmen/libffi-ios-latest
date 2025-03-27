@@ -8,8 +8,8 @@ Pod::Spec.new do |spec|
   spec.author           = { 'aaronTang' => 'aaronTang1123@126.com' }
   spec.source           = { :git => 'https://github.com/CodeAcmen/libffi-ios-latest.git', :tag => 'v3.4.0' }
   spec.platform         = :ios, '9.0'
-  spec.source_files     = 'libffi-ios-universal/include/**/*.{h}'
+  spec.source_files     = 'libffi-ios-latest/libffi-ios-universal/include/**/*.{h}'
   spec.libraries        = 'ffi'
-  spec.vendored_libraries = 'libffi-ios-universal/lib/**/*.{a}'
+  spec.vendored_libraries = 'libffi-ios-latest/libffi-ios-universal/lib/**/*.{a}'
 end
 

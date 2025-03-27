@@ -1,5 +1,28 @@
 # libffi-ios-latest
-最新的 iOS libffi 库，与官方版本同步更新。The latest iOS libffi library, synced with official releases.
+最新的 iOS libffi 库，与官方正式版本同步更新。The latest iOS libffi library, synced with official releases.
+
+## 快速使用
+
+使用 CocoaPods 安装 `libffi-ios-latest`：
+
+在你的 `Podfile` 中添加以下内容：
+
+```ruby
+pod 'libffi-ios-latest'
+```
+然后，运行以下命令安装依赖：
+```bash
+pod install
+```
+## 导入库
+在你的 **Objective-C** 项目中，使用以下方式导入：
+```objc
+#import <libffi-ios-latest/ffi.h>
+```
+在你的 **Swift** 项目中，使用以下方式导入：
+```swift
+import libffi_ios_latest
+```
 
 ## 中文描述
 

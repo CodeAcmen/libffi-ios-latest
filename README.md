@@ -34,23 +34,37 @@ import libffi_ios_latest
 
 该库会定期更新，以确保与官方 `libffi` 最新版本保持同步，方便开发者使用最新版本进行 iOS 开发。
 
+## 已知问题与版本说明
+
+- **本仓库V3.4.0版本-3.4.0-patch2** 版本存在问题。使用这些版本时，可能会遇到一些已知的构建问题和头文件未正确链接的问题。
+- 如果使用**v3.4.0版本，请使用 `3.4.0-fix` 版本**。此版本已修复了 `patch1` 和 `patch2` 中的问题，确保正确集成 `libffi` 到 iOS 项目中。
+- 如果你正在使用较旧版本（例如 `3.4.0-patch1` 或 `3.4.0-patch2`），强烈建议升级到 `3.4.0-fix` 或更高版本。
+- 后续版本号将与官方正式版同步，修复bug版本将不带"v"，具体请留意说明
+
 ### 关于未来开发的建议
 
 尽管 **libffi-iOS** 支持 **x86_64** 和 **arm64** 模拟器，但强烈建议未来的开发，尤其是针对 **iOS 12 及以上版本**，优先使用 **arm64 模拟器**，特别是对于使用 **Apple Silicon**（如 M1、M2）设备的开发者。自 **iOS 12** 版本以来，Apple 已将模拟器默认架构转向 **arm64**，因此为了兼容性和性能，建议开发者优先针对 **arm64 模拟器** 进行开发。
 
 
 
-## English Description
+### English Description
 
-This repository provides the latest version of `libffi` for iOS, synced with the official releases. It includes a universal static library supporting both **x86_64** and **arm64** architectures for **iOS simulators** and **arm64** for **iOS devices**.
+This repository provides the latest version of the `libffi` iOS library, synchronized with the official releases. The library includes support for **x86_64** and **arm64** architectures for **iOS Simulators**, as well as **arm64** architecture for **iOS devices**.
 
-- **Simulators**: Support for both **x86_64** (Intel Mac) and **arm64** (Apple Silicon) architectures.
-- **Devices**: Support for **arm64** architecture for iOS devices.
+- **Simulators**: Supports **x86_64** (Intel Macs) and **arm64** (Apple Silicon) architectures.
+- **Devices**: Supports **arm64** architecture for iOS devices.
 - **Compatibility**: Compatible with iOS 9.0 and later.
 
-The library is regularly updated to match the latest official releases of `libffi`, ensuring developers have access to the most up-to-date version for iOS development.
+This library will be updated regularly to ensure it stays in sync with the official `libffi` releases, making it easy for developers to use the latest version in iOS development.
 
-### Important Note for Future Development
+## Known Issues and Version Notes
 
-Although **libffi-iOS** supports both **x86_64** and **arm64** simulators, it is strongly recommended to embrace the **arm64 simulator** for future development, especially for developers working with **Apple Silicon** devices (M1/M2). Starting with **iOS 12** and later, Apple has transitioned the default simulator architecture to **arm64**, and moving forward, it's best to target **arm64 simulators** for compatibility and performance.
+- The **v3.4.0 version - 3.4.0-patch2** has issues. Using these versions may lead to known build problems and incorrect header linking.
+- If you are using **v3.4.0**, please use the `3.4.0-fix` version. This version fixes the issues in `patch1` and `patch2`, ensuring proper integration of `libffi` into iOS projects.
+- If you are using older versions (such as `3.4.0-patch1` or `3.4.0-patch2`), it is strongly recommended to upgrade to `3.4.0-fix` or higher.
+- Future versions will align with the official release version, and bug-fix versions will not have the "v" prefix. Please pay attention to release notes for further details.
+
+### Future Development Recommendations
+
+Although **libffi-iOS** supports **x86_64** and **arm64** simulators, it is strongly recommended to prioritize **arm64 simulators** for future development, especially for **iOS 12 and later versions**, particularly for developers using **Apple Silicon** devices (such as M1 or M2). Since **iOS 12**, Apple has shifted the default architecture for simulators to **arm64**, so for better compatibility and performance, developers should prioritize **arm64 simulators** for development.
 
